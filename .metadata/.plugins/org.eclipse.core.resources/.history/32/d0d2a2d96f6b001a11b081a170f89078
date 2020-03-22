@@ -1,0 +1,54 @@
+
+
+object DaysOfTheWeek {
+  def main(args: Array[String]): Unit ={
+    var daysArray = List("Poniedziałek", "Wtorek", "Środa","Czwartek","Piątek","Sobota","Niedziela")
+    //1.a
+    println("Pętla for - Wszystkie dni tygodnia:")
+    for ( x <- daysArray ) {
+      println( x )
+    }
+
+    //1.b
+    println("\nDni tygodnia zaczynające się na literkę P:")
+    for ( x <- daysArray ) {
+      if (x.charAt(0).==('P')){
+        println(x)
+      }
+    }
+    
+    //1.c
+    println("\nPętla while - Wszystkie dni tygodnia:")
+    var i = 0
+    val s = daysArray.size
+
+    while (i < s) {
+      println(daysArray(i))
+      i += 1
+    }
+    
+    //2
+    def reverser(some_list: Array[String] ,  some_string: String): String = {
+      if (some_list.isEmpty){
+          return ""
+      }
+      else if(some_list.size == 1 && some_list.contains(some_string)){
+          return some_string.reverse//[::-1] 
+      }
+      else{
+          if(some_list(0) == some_string){
+              return some_string.reverse + reverser(some_list[1:], some_string)
+          }
+          if(some_list(0) != some_string){
+              return some_list(0) + reverser(some_list[1:], some_string)
+          }
+      }
+    }
+reverser(test_list, test_string)
+    
+    /*def sum3(list: Array[String]): String = {
+      if (list.size > 2) 
+      else xs.head + sum3(xs.tail)
+    }*/
+  }
+}
