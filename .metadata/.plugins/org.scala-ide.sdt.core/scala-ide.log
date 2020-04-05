@@ -1501,3 +1501,23 @@ scala.reflect.internal.FatalError: ThisType(variable pracownik) for sym which is
 2020-04-05 16:49:40,356  WARN [Worker-2] - ScalaProject - Project CWICZENIE_2_s20842 runs on platform default installation.
 2020-04-05 16:50:11,181  WARN [Worker-2] - ScalaProject - Project CWICZENIE_2_s20842 has platform default sourceLevel.
 2020-04-05 16:50:11,182  WARN [Worker-2] - ScalaProject - Project CWICZENIE_2_s20842 runs on platform default installation.
+2020-04-05 16:55:19,453  WARN [Worker-13] - ScalaProject - Project CWICZENIE_2_s20842 has platform default sourceLevel.
+2020-04-05 16:55:19,454  WARN [Worker-13] - ScalaProject - Project CWICZENIE_2_s20842 runs on platform default installation.
+2020-04-05 16:55:20,919  WARN [Worker-32] - ScalaProject - Project CWICZENIE_2_s20842 has platform default sourceLevel.
+2020-04-05 16:55:20,919  WARN [Worker-32] - ScalaProject - Project CWICZENIE_2_s20842 runs on platform default installation.
+2020-04-05 17:00:53,245  WARN [main] - ScalaProject - Project CWICZENIE_2_s20842 has platform default sourceLevel.
+2020-04-05 17:00:53,250  WARN [main] - ScalaProject - Project CWICZENIE_2_s20842 runs on platform default installation.
+2020-04-05 17:00:53,263  WARN [main] - ScalaProject - Project CWICZENIE_2_s20842 has platform default sourceLevel.
+2020-04-05 17:00:53,263  WARN [main] - ScalaProject - Project CWICZENIE_2_s20842 runs on platform default installation.
+2020-04-05 17:00:57,532  WARN [main] - ScalaProject - Project CWICZENIE_1_s20841 has platform default sourceLevel.
+2020-04-05 17:00:57,532  WARN [main] - ScalaProject - Project CWICZENIE_1_s20841 runs on platform default installation.
+2020-04-05 17:01:00,458 ERROR [Worker-1] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-04-05 17:01:00,459 ERROR [Worker-1] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-04-05 17:01:23,831  WARN [ModalContext] - ScalaProject - Project CWICZENIE_2_s20841 has platform default sourceLevel.
+2020-04-05 17:01:23,832  WARN [ModalContext] - ScalaProject - Project CWICZENIE_2_s20841 runs on platform default installation.
+2020-04-05 17:01:23,936  WARN [ModalContext] - ScalaProject - Project CWICZENIE_2_s20841 has platform default sourceLevel.
+2020-04-05 17:01:23,936  WARN [ModalContext] - ScalaProject - Project CWICZENIE_2_s20841 runs on platform default installation.
+2020-04-05 17:01:25,473  WARN [Worker-7] - ScalaProject - Project CWICZENIE_2_s20841 has platform default sourceLevel.
+2020-04-05 17:01:25,473  WARN [Worker-7] - ScalaProject - Project CWICZENIE_2_s20841 runs on platform default installation.
+2020-04-05 17:01:25,680  WARN [Worker-7] - ScalaProject - Project CWICZENIE_2_s20841 has platform default sourceLevel.
+2020-04-05 17:01:25,680  WARN [Worker-7] - ScalaProject - Project CWICZENIE_2_s20841 runs on platform default installation.
