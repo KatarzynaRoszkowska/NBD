@@ -24,9 +24,9 @@ trait Pracownik extends Osoba_5 {
    // Setter
   def pensja_= (value : Double) = _pensja = (value * podatek)
   
-  override def podatek: Double = 0.70
+  override def podatek: Double = 0.80
 }
 
 trait Nauczyciel extends Pracownik {
-  override def podatek: Double = 0.75
+  override def podatek: Double = 0.90
 }
