@@ -22,5 +22,5 @@ var reduceFunction = function (nationality, objVals) {
 }
 
 db.people.mapReduce(mapFunction, reduceFunction, 
-{ out: "result5"})
-db.result5.find({})
+{ out: "result4MR"})
+db.result4MR.find({})
