@@ -35,7 +35,7 @@ db.people.aggregate([
         }
     },
     {
-        $out: "result5A"
+        $out: "result4A"
     }
 ])
-db.result5A.find({})
+db.result4A.find({})
