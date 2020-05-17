@@ -1,12 +1,19 @@
-db.people.aggregate([
-    { $match: { "sex": "Female", "nationality": "Poland" } },
-    { $unwind: "$credit" },
+  db.people.aggregate([
     {
-        $group: { 
+        $match: { sex: "Female", nationality: "Poland" }
+    },
+    {
+        $unwind: "$credit"
+    },
+    {
+        $group: {
             _id: "$credit.currency",
-            avgBalance: { $avg: "$credit.balance" },
-            sumBalance: { $sum: "$credit.balance" },
-            count: { $sum: 1 }
+            sum: { $sum:  { $toDouble: "$credit.balance" }  },
+            avg: { $avg: { $toDouble: "$credit.balance" }  }
         }
+    },
+    {
+        $out: "result5A"
     }
-]);
+])
+db.result5A.find({})
