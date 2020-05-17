@@ -1,10 +1,11 @@
-var mapFunction = function () {
+db.people.mapReduce(
+function () {
     var bmi = Math.round((+this.weight * 1000000 / (Math.pow(this.height,2))) ) / 100
     
     emit(this.nationality, { qty: 1, minBMI: bmi, maxBMI: bmi, avgBMI: bmi });
 }
-
-var reduceFunction = function (nationality, objVals) {
+, 
+function (nationality, objVals) {
     tmp = { qty: 0, minBMI: 0, maxBMI: 0, avgBMI: 0 }
     for (var idx = 0; idx < objVals.length; idx++) {
         tmp.qty += objVals[idx].qty;
@@ -20,7 +21,6 @@ var reduceFunction = function (nationality, objVals) {
     
     return tmp;
 }
-
-db.people.mapReduce(mapFunction, reduceFunction, 
+, 
 { out: "result4MR"})
 db.result4MR.find({})
