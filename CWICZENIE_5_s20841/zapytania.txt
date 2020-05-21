@@ -9,3 +9,6 @@ MATCH (hugo:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(hugoWeavingMovies)<-[:D
 
 4.	Wszystkie osoby, z którymi Hugo Weaving grał w tych samych filmach
 MATCH (hugo:Person {name:"Hugo Weaving"})-[:ACTED_IN]->(hugoWeavingMovies)<-[:ACTED_IN]-(actors) RETURN actors
+
+6.	Listę aktorów (aktor = osoba, która grała przynajmniej w jednym filmie) wraz z ilością filmów, w których grali 
+MATCH (sb:Person)-[:ACTED_IN]->(sbMovies) RETURN sb, count(*) as count
