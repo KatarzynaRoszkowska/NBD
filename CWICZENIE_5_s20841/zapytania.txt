@@ -12,3 +12,7 @@ MATCH (hugo:Person {name:"Hugo Weaving"})-[:ACTED_IN]->(hugoWeavingMovies)<-[:AC
 
 6.	Listę aktorów (aktor = osoba, która grała przynajmniej w jednym filmie) wraz z ilością filmów, w których grali 
 MATCH (sb:Person)-[:ACTED_IN]->(sbMovies) RETURN sb, count(*) as count
+
+7.	Listę osób, które napisały scenariusz filmu, które wyreżyserowały wraz z tytułami takich filmów (koniunkcja – ten sam autor scenariusza i reżyser) 
+MATCH (sb:Person)-[:DIRECTED]->(directed)<-[:WROTE]-(wrote) WHERE wrote=sb RETURN sb, directed
+
