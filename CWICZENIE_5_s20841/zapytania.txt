@@ -16,3 +16,7 @@ MATCH (sb:Person)-[:ACTED_IN]->(sbMovies) RETURN sb, count(*) as count
 7.	Listę osób, które napisały scenariusz filmu, które wyreżyserowały wraz z tytułami takich filmów (koniunkcja – ten sam autor scenariusza i reżyser) 
 MATCH (sb:Person)-[:DIRECTED]->(directed)<-[:WROTE]-(wrote) WHERE wrote=sb RETURN sb, directed
 
+8.	Listę filmów, w których grał zarówno Hugo Weaving jak i Keanu Reeves
+MATCH (keanu:Person {name:"Keanu Reeves"})-[:ACTED_IN]->(actedIn)<-[:ACTED_IN]-(hugo:Person {name:"Hugo Weaving"}) RETURN actedIn
+
+
