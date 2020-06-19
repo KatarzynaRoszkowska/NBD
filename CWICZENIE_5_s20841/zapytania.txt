@@ -22,4 +22,20 @@ MATCH (sb:Person)-[:DIRECTED]->(directed)<-[:WROTE]-(wrote) WHERE wrote=sb RETUR
 8.	Listę filmów, w których grał zarówno Hugo Weaving jak i Keanu Reeves
 MATCH (keanu:Person {name:"Keanu Reeves"})-[:ACTED_IN]->(actedIn)<-[:ACTED_IN]-(hugo:Person {name:"Hugo Weaving"}) RETURN actedIn
 
+9.
+CREATE (theFirstAvenger:Movie {title:'Capitan America:The First Avenger', released:2011})
+CREATE (johnston:Person {name:'Joe Johnston', born:1950})
+CREATE (evans:Person {name:'Chris Evans', born:1981})
+CREATE (mcFeely:Person {name:'Stephen McFeely', born:1952})
+CREATE (markus:Person {name:'Christopher Markus', born:1965})
+CREATE (jackson:Person {name:'Samuel L. Jackson', born:1948})
+CREATE (evans)-[:ACTED_IN {roles:['Capitan America / Steve Rogers']}]->(theFirstAvenger)
+CREATE (jackson)-[:ACTED_IN {roles:['Nick Fury']}]->(theFirstAvenger)
+CREATE (hugoWeaving:Person {name: 'Hugo Weaving'})-[:ACTED_IN {roles:['Red Skull']}]->(CapitanAmerica)
+CREATE (johnston)-[:DIRECTED]->(theFirstAvenger)
+CREATE (markus)-[:WROTE]->(theFirstAvenger)
+CREATE  (mcFeely)-[:WROTE]->(theFirstAvenger)
+MATCH (people:Person)-[related]-(movie:Movie {title: "Capitan America:The First Avenger"}) RETURN people,movie, Type(related), related
+
+
 
