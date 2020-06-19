@@ -2,13 +2,16 @@
 MATCH (m:Movie) return m
 
 2.	Wszystkie filmy, w których grał Hugo Weaving 
-MATCH (hugo:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(hugoWeavingMovies) RETURN hugo,hugoWeavingMovies
+MATCH (hugo:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(hugoWeavingMovies) RETURN hugoWeavingMovies
 
 3.	Reżyserzy filmów, w których grał Hugo Weaving 
 MATCH (hugo:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(hugoWeavingMovies)<-[:DIRECTED]-(directors) RETURN directors
 
 4.	Wszystkie osoby, z którymi Hugo Weaving grał w tych samych filmach
 MATCH (hugo:Person {name:"Hugo Weaving"})-[:ACTED_IN]->(hugoWeavingMovies)<-[:ACTED_IN]-(actors) RETURN actors
+
+5.  Wszystkie filmy osób, które grały w Matrix
+MATCH (n:Movie)<-[:ACTED_IN]-(r:Person)-[:ACTED_IN]->(m:Movie) WHERE m.title =~'The Matrix.+' RETURN DISTINCT n
 
 6.	Listę aktorów (aktor = osoba, która grała przynajmniej w jednym filmie) wraz z ilością filmów, w których grali 
 MATCH (sb:Person)-[:ACTED_IN]->(sbMovies) RETURN sb, count(*) as count
