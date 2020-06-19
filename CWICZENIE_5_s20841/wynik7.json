@@ -1,0 +1,185 @@
+[
+  {
+    "keys": [
+      "sb",
+      "directed"
+    ],
+    "length": 2,
+    "_fields": [
+      {
+        "identity": {
+          "low": 1041679,
+          "high": 0
+        },
+        "labels": [
+          "Person"
+        ],
+        "properties": {
+          "name": "Lilly Wachowski",
+          "born": {
+            "low": 1967,
+            "high": 0
+          }
+        }
+      },
+      {
+        "identity": {
+          "low": 1041795,
+          "high": 0
+        },
+        "labels": [
+          "Movie"
+        ],
+        "properties": {
+          "title": "Speed Racer",
+          "tagline": "Speed has no limits",
+          "released": {
+            "low": 2008,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "sb": 0,
+      "directed": 1
+    }
+  },
+  {
+    "keys": [
+      "sb",
+      "directed"
+    ],
+    "length": 2,
+    "_fields": [
+      {
+        "identity": {
+          "low": 1041680,
+          "high": 0
+        },
+        "labels": [
+          "Person"
+        ],
+        "properties": {
+          "name": "Lana Wachowski",
+          "born": {
+            "low": 1965,
+            "high": 0
+          }
+        }
+      },
+      {
+        "identity": {
+          "low": 1041795,
+          "high": 0
+        },
+        "labels": [
+          "Movie"
+        ],
+        "properties": {
+          "title": "Speed Racer",
+          "tagline": "Speed has no limits",
+          "released": {
+            "low": 2008,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "sb": 0,
+      "directed": 1
+    }
+  },
+  {
+    "keys": [
+      "sb",
+      "directed"
+    ],
+    "length": 2,
+    "_fields": [
+      {
+        "identity": {
+          "low": 1041719,
+          "high": 0
+        },
+        "labels": [
+          "Person"
+        ],
+        "properties": {
+          "name": "Cameron Crowe",
+          "born": {
+            "low": 1957,
+            "high": 0
+          }
+        }
+      },
+      {
+        "identity": {
+          "low": 1041711,
+          "high": 0
+        },
+        "labels": [
+          "Movie"
+        ],
+        "properties": {
+          "title": "Jerry Maguire",
+          "tagline": "The rest of his life begins now.",
+          "released": {
+            "low": 2000,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "sb": 0,
+      "directed": 1
+    }
+  },
+  {
+    "keys": [
+      "sb",
+      "directed"
+    ],
+    "length": 2,
+    "_fields": [
+      {
+        "identity": {
+          "low": 1041830,
+          "high": 0
+        },
+        "labels": [
+          "Person"
+        ],
+        "properties": {
+          "name": "Nancy Meyers",
+          "born": {
+            "low": 1949,
+            "high": 0
+          }
+        }
+      },
+      {
+        "identity": {
+          "low": 1041828,
+          "high": 0
+        },
+        "labels": [
+          "Movie"
+        ],
+        "properties": {
+          "title": "Something's Gotta Give",
+          "released": {
+            "low": 2003,
+            "high": 0
+          }
+        }
+      }
+    ],
+    "_fieldLookup": {
+      "sb": 0,
+      "directed": 1
+    }
+  }
+]
