@@ -4,8 +4,16 @@ MATCH shortest = shortestPath((start:town{name: "Darjeeling"})-[*]-(meta:peak { 
 2.	Znajdź mające najmniej etapów trasy którymi można dostać się z Darjeeling na Sandakphu i które mogą być wykorzystywane zimą 
 MATCH shortestPath = shortestPath ((start:town{name: "Darjeeling"})-[*]-(meta:peak { name:"Sandakphu" })) WHERE ALL(shortestPath in rels(shortestPath) WHERE shortestPath.winter = "true") RETURN shortestPath
 
-3.	Uszereguj trasy którymi można dostać się z Darjeeling na Sandakphu według dystansu Znajdź wszystkie miejsca do których można dotrzeć przy pomocy roweru (twowheeler) z Darjeeling latem
+3. Zadanie trzecie podzieliłam na dwa, gdyż nie umiałam zrobić tego w jednym zapytaniu.
+3a.	Uszereguj trasy którymi można dostać się z Darjeeling na Sandakphu według dystansu 
+MATCH finalPath = ((start:town{name: "Darjeeling"})-[*1..6]-(meta:peak { name:"Sandakphu" }))
+RETURN finalPath, reduce(addDistance=0, path IN relationships(finalPath)|addDistance + path.distance) AS finalDistance ORDER BY finalDistance ASC
 
+3b. Znajdź wszystkie miejsca do których można dotrzeć przy pomocy roweru (twowheeler) z Darjeeling latem
+[Komentarz:Niestety z Darjeeling faktycznie nie ma żadnej takie trasy, więc wynik nic nie zwrócił. Natomiast testowałam to zapytanie dla miasta, z którego można dojechać rowerem i wyniki były poprawne.]
+
+match (start:town {name:"Darjeeling"}), (end)
+match p=(start)-[r:twowheeler*2..5]->(end) return p
 
 4.	Uszereguj porty lotnicze według ilości rozpoczynających się w nich lotów
 MATCH (a:Airport)<-[o:ORIGIN]-(f:Flight) return a, count(o) as occurrence order by occurrence DESC
