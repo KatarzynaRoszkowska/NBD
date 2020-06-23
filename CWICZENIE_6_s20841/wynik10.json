@@ -1,0 +1,133 @@
+[
+  {
+    "keys": [
+      "p",
+      "redukcja"
+    ],
+    "length": 2,
+    "_fields": [
+      {
+        "start": {
+          "identity": {
+            "low": 21,
+            "high": 0
+          },
+          "labels": [
+            "Airport"
+          ],
+          "properties": {
+            "name": "MSN"
+          }
+        },
+        "end": {
+          "identity": {
+            "low": 68,
+            "high": 0
+          },
+          "labels": [
+            "Airport"
+          ],
+          "properties": {
+            "name": "GRR"
+          }
+        },
+        "segments": [
+          {
+            "start": {
+              "identity": {
+                "low": 21,
+                "high": 0
+              },
+              "labels": [
+                "Airport"
+              ],
+              "properties": {
+                "name": "MSN"
+              }
+            },
+            "relationship": {
+              "identity": {
+                "low": 4759,
+                "high": 0
+              },
+              "start": {
+                "low": 21,
+                "high": 0
+              },
+              "end": {
+                "low": 7,
+                "high": 0
+              },
+              "type": "LOT",
+              "properties": {
+                "cena": 88.5
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 7,
+                "high": 0
+              },
+              "labels": [
+                "Airport"
+              ],
+              "properties": {
+                "name": "ORD"
+              }
+            }
+          },
+          {
+            "start": {
+              "identity": {
+                "low": 7,
+                "high": 0
+              },
+              "labels": [
+                "Airport"
+              ],
+              "properties": {
+                "name": "ORD"
+              }
+            },
+            "relationship": {
+              "identity": {
+                "low": 5278,
+                "high": 0
+              },
+              "start": {
+                "low": 7,
+                "high": 0
+              },
+              "end": {
+                "low": 68,
+                "high": 0
+              },
+              "type": "LOT",
+              "properties": {
+                "cena": 108
+              }
+            },
+            "end": {
+              "identity": {
+                "low": 68,
+                "high": 0
+              },
+              "labels": [
+                "Airport"
+              ],
+              "properties": {
+                "name": "GRR"
+              }
+            }
+          }
+        ],
+        "length": 2
+      },
+      196.5
+    ],
+    "_fieldLookup": {
+      "p": 0,
+      "redukcja": 1
+    }
+  }
+]
