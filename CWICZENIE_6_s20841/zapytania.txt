@@ -41,5 +41,8 @@ return p, redukcja order by redukcja LIMIT 1
 9.	MATCH p=(start:Airport)<-[:ORIGIN]-(f:Flight)-[:DESTINATION]->(end:Airport)
 return start, count(distinct end)
 
-10.	Znajdź najtańszą trasę łączącą 3 różne porty lotnicze
+10.	MATCH p=(start:Airport)-[r:LOT*2]->(end:Airport)
+WHERE (start)<>(end)
+with p, reduce(totalPrice = 0, bilet in r | totalPrice + bilet.cena) as redukcja
+return p, redukcja order by redukcja LIMIT 1
 
