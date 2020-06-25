@@ -1,0 +1,19 @@
+root@user-VirtualBox:/home/user# curl -i -X GET \
+>   http://127.0.0.1:8098/buckets/s20841/keys/dab
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/fhotdIxhYPx9MYMpkTGPleGOWMYNviwA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s20841>; rel="up"
+Last-Modified: Wed, 24 Jun 2020 18:26:36 GMT
+ETag: "7J8aL1FbcsjCJNo05OGNCr"
+Date: Wed, 24 Jun 2020 18:31:08 GMT
+Content-Type: application/json
+Content-Length: 83
+
+{
+    "type": "lisciaste",
+    "age": 2,
+    "area": "Polska",
+    "height": 10
+  }

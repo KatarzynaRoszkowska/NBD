@@ -1,0 +1,15 @@
+root@user-VirtualBox:/home/user# curl -i -X PUT \
+>   http://127.0.0.1:8098/buckets/s20841/keys/kasztan \
+>   -H 'cache-control: no-cache' \
+>   -H 'content-type: application/json' \
+>   -d '{
+>     "type": "lisciaste",
+>     "age": 6,
+>     "area": "Polska",
+>   }'
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Wed, 24 Jun 2020 18:32:38 GMT
+Content-Type: application/json
+Content-Length: 0

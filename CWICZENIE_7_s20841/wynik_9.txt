@@ -1,0 +1,17 @@
+root@user-VirtualBox:/home/user# curl -i -X GET \
+>   http://127.0.0.1:8098/buckets/s20841/keys/U4IrwD5XMVkahSLHBJMzmYNr4D6 \
+> -H 'cache-control: no-cache'
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/fhotDRNlYPx9KYMpkTGPlcFVNeMGXxYA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s20841>; rel="up"
+Last-Modified: Wed, 24 Jun 2020 19:28:05 GMT
+ETag: "1XxudkyIPInQOEWxkiiziy"
+Date: Wed, 24 Jun 2020 19:37:21 GMT
+Content-Type: application/json
+Content-Length: 28
+
+{
+    "type": "not a tree"
+}

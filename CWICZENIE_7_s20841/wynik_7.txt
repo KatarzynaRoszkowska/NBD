@@ -1,0 +1,10 @@
+root@user-VirtualBox:/home/user# curl -i -X GET \
+>   http://127.0.0.1:8098/buckets/s20841/keys/brak \
+> -H 'cache-control: no-cache'
+HTTP/1.1 404 Object Not Found
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Wed, 24 Jun 2020 18:34:38 GMT
+Content-Type: text/plain
+Content-Length: 10
+
+not found

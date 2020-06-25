@@ -1,0 +1,14 @@
+root@user-VirtualBox:/home/user# curl -i -X POST \
+>   http://127.0.0.1:8098/buckets/s20841/keys \
+>   -H 'cache-control: no-cache' \
+>   -H 'content-type: application/json' \
+>   -d '{
+>     "type": "not a tree"
+> }'
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s20841/keys/U4IrwD5XMVkahSLHBJMzmYNr4D6
+Date: Wed, 24 Jun 2020 19:28:05 GMT
+Content-Type: application/json
+Content-Length: 0
