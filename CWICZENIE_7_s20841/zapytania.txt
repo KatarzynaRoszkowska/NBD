@@ -1,0 +1,145 @@
+zadanie1:
+
+curl -i -X PUT \
+  http://127.0.0.1:8098/buckets/s20841/keys/dab \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+    "type": "lisciaste",
+    "age": 2,
+    "area": "Polska",
+    "height": 10
+  }'
+
+curl -i -X PUT \
+  http://127.0.0.1:8098/buckets/s20841/keys/brzoza\
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+    "type": "lisciaste",
+    "age": 4,
+    "area": "Polsa",
+    "height": 20
+  }'
+
+curl -i -X PUT \
+  http://127.0.0.1:8098/buckets/s20841/keys/kasztan \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+    "type": "lisciaste",
+    "age": 6,
+    "area": "Polska",
+    "height": 30
+  }'
+
+curl -i -X PUT \
+  http://127.0.0.1:8098/buckets/s20841/keys/eukailiptus\
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+    "type": "lisicaste",
+    "age": 2,
+    "area": "USA",
+    "height": 40
+  }'
+
+curl -i -X PUT \
+  http://127.0.0.1:8098/buckets/s20841/keys/swierk \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+    "type": "iglaste",
+    "age": 10,
+    "area": "Polska",
+    "height": 50
+  }'
+
+
+zadanie2:
+
+curl -i -X GET \
+  http://127.0.0.1:8098/buckets/s20841/keys/dab
+
+
+zadnanie3:
+
+curl -i -X PUT \
+  http://127.0.0.1:8098/buckets/s20841/keys/dab \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+    "type": "lisciaste",
+    "age": 2,
+    "area": "Polska",
+    "height": 10
+    "diameter": 5
+  }'
+
+
+zadanie4:
+
+curl -i -X PUT \
+  http://127.0.0.1:8098/buckets/s20841/keys/kasztan \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+    "type": "lisciaste",
+    "age": 6,
+    "area": "Polska",
+  }'
+
+
+zadanie5:
+
+curl -i -X PUT \
+  http://127.0.0.1:8098/buckets/s20841/keys/eukailiptus\
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+    "type": "lisicaste",
+    "age": 10,
+    "area": "USA",
+    "height": 40
+  }'
+
+
+zadanie6:
+
+curl -i -X DELETE \
+  http://127.0.0.1:8098/buckets/s20841/keys/dab \
+-H 'cache-control: no-cache'
+
+
+zadanie7:
+
+curl -i -X GET \
+  http://127.0.0.1:8098/buckets/s20841/keys/brak \
+-H 'cache-control: no-cache'
+
+
+zadanie8:
+
+curl -i -X POST \
+  http://127.0.0.1:8098/buckets/s20841/keys \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+    "type": "not a tree"
+}'
+
+
+zadanie9:
+
+curl -i -X GET \
+  http://127.0.0.1:8098/buckets/s20841/keys/U4IrwD5XMVkahSLHBJMzmYNr4D6 \
+-H 'cache-control: no-cache'
+
+
+zadanie10:
+
+curl -i -X DELETE \
+  http://127.0.0.1:8098/buckets/s20841/keys/U4IrwD5XMVkahSLHBJMzmYNr4D6 \
+-H 'cache-control: no-cache'
+
+
